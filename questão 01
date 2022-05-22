@@ -1,0 +1,17 @@
+def corrida(tartaruga):
+    lebre = 0
+    minutos = 0
+    while True:
+        minutos += 1
+        tartaruga += 1
+        lebre += 10
+        if lebre > tartaruga:
+            break
+    return f' A lebre levará {minutos} minutos para alcançar a tartaruga'
+
+def main():
+    tartaruga = int(input('Digite a metragem de vantagem da tartaruga: ').strip())
+    print(corrida(tartaruga))
+
+if __name__ == '__main__':
+    main()
